@@ -1,0 +1,49 @@
+.menu-clean {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-clean li {
+  position: relative;
+  font-family: inherit;
+  font-size: 1.08rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.menu-clean a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-clean a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #2A61B6 0%, #3DB163 100%);
+  transition: width 0.3s cubic-bezier(.77,0,.18,1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+.menu-clean a:hover,
+.menu-clean a:focus {
+  color: #3DB163;
+}
+
+.menu-clean a:hover::after,
+.menu-clean a:focus::after {
+  width: 100%;
+} 
