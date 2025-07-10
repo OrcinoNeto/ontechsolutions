@@ -20,4 +20,4 @@ const MenuClean: React.FC = () => (
   </ul>
 );
 
-export default MenuClean; 
+export default MenuClean;

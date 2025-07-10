@@ -1,1 +1,1 @@
-export { default } from "./Divisor"; 
+export { default } from "./Divisor";

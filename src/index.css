@@ -8,3 +8,59 @@ html {
     display: none !important;
   }
 }
+
+.swiper-slide {
+  transition: filter 0.3s, opacity 0.3s, transform 0.3s, z-index 0.3s;
+  filter: none;
+  opacity: 1;
+  transform: scale(0.85);
+  z-index: 1;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  filter: blur(4px);
+  opacity: 0.6;
+  transform: scale(0.85) translateY(20px);
+  z-index: 1;
+}
+
+.swiper-slide-active {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05) translateY(0);
+  z-index: 2;
+}
+
+.swiper-slide-active .bg-\[\#121727\] {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,183,255,0.5);
+  transition-delay: 0.3s;
+}
+
+.transition-transform {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(40px) scale(0.98);}
+  to   { opacity: 1; transform: translateY(0) scale(1);}
+}
+.animate-fade-in {
+  animation: fade-in 0.3s both;
+}
+.animate-slide-up {
+  animation: slide-up 0.3s both;
+}
+
+@keyframes slide-down {
+  from { opacity: 1; transform: translateY(0) scale(1);}
+  to   { opacity: 0; transform: translateY(40px) scale(0.98);}
+}
+.animate-slide-down {
+  animation: slide-down 0.3s both;
+}

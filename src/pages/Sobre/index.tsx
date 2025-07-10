@@ -41,4 +41,4 @@ const Sobre: React.FC = () => {
   );
 };
 
-export default Sobre; 
+export default Sobre;

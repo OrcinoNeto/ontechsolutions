@@ -61,4 +61,4 @@ const Divisor: React.FC<DivisorProps> = ({
   </div>
 );
 
-export default Divisor; 
+export default Divisor;

@@ -9,7 +9,7 @@ const WhatsappButton: React.FC = () => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Conversar no WhatsApp"
-    className="fixed z-50 bottom-8 right-6 w-16 h-16 rounded-full bg-[#25d366] flex items-center justify-center shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-400 group"
+    className="fixed z-50 bottom-12 right-6 w-16 h-16 rounded-full bg-[#25d366] flex items-center justify-center shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-400 group"
     style={{ boxShadow: "0 4px 24px 0 rgba(37,211,102,0.4)" }}
   >
     <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
@@ -25,4 +25,4 @@ const WhatsappButton: React.FC = () => (
   </a>
 );
 
-export default WhatsappButton; 
+export default WhatsappButton;

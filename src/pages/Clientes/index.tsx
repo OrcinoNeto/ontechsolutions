@@ -40,4 +40,4 @@ const Clientes: React.FC = () => {
   );
 };
 
-export default Clientes; 
+export default Clientes;
